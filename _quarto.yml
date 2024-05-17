@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: docs
+  
+execute: 
+  freeze: auto
+
+website:
+  title: "UK Reproducibility Network"
+  site-url: https://UKRN.github.io
+  repo-url: https://github.com/UKRN/UKRN.github.io
+  image: images/logo.png
+  favicon: images/favicon.ico
+  navbar:
+    logo: /images/logo.png
+    logo-alt: "Globe with URN and big pink UK"
+  page-footer:
+    background: primary
+    right:
+      - text: "{{< ai osf size=1x >}}"
+        aria-label: OSF
+        href: https://osf.io/x8j9q/
+      - icon: github
+        aria-label: GitHub
+        href: https://github.com/UKRN
+      - icon: twitter
+        aria-label: Twitter
+        href: https://twitter.com/ukrepro
+format:
+  html:
+    theme: 
+      light: [flatly, light.scss]
+      dark: [darkly, styles.scss]
+  
+
+
